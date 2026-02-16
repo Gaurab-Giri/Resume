@@ -1,204 +1,308 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurab Giri - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
     <div class="cover">
       <div class="profile-pic">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRwv5RMwSOhScAXDMzGYl02ail3aqHOCg92u1IVPF6w3Kr2jYhVUwIXA7HTQ&s&ec=121507538" alt="Gaurab Giri">
       </div>
     </div>
-    <div class="text-center">
+    
+    <div class="text-center header-content">
       <h1>Gaurab Giri</h1>
-      <p class="subtitle">
-        Computer Science & Business Analytics Undergraduate
-      </p>
-      <p class="subtitle">
+      <p class="subtitle">Computer Science & Business Analytics Undergraduate</p>
+      <p class="subtitle contact-info">
         ggiri@caldwell.edu • 862-459-4545 <br>
-        <a href="https://www.linkedin.com/in/gaurab-giri-6890591b7/?originalSubdomain=np" target="_blank" class="social-link">
-          <span>LinkedIn</span>
-        </a>
-        <span class="separator">|</span>
-        <a href="https://github.com/Gaurab-Giri" target="_blank" class="social-link">
-          <span>GitHub</span>
-        </a>
+        <a href="https://www.linkedin.com/in/gaurab-giri-6890591b7/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Gaurab-Giri" target="_blank">GitHub</a>
       </p>
-  <!-- Hidden audio element -->
-  <audio id="bgMusic" src="https://classical-bronze-3zyzwulvzh.edgeone.app/background-music-159125.mp3" loop></audio>
-      <div class="music-controls">
-        <button id="playMusicBtn" class="music-btn">
-          <span class="btn-icon">▶</span>
-          <span>Play</span>
-        </button>
-        <button id="stopMusicBtn" class="music-btn">
-          <span class="btn-icon">⏹</span>
-          <span>Stop</span>
-        </button>
-      </div>
-      <p id="locationDisplay" class="location-display">
-        <span class="location-icon">📍</span>
-        <span class="location-text">Loading...</span>
-      </p>
-      
-      <!-- DOWNLOAD BUTTON -->
       <p>
-        <a href="#" class="download-btn">
-          <span>Download Resume (PDF)</span>
-          <span class="download-icon">↓</span>
+        <a href="Resume_24.pdf" class="btn-download" download="Gaurab_Giri_Resume.pdf">
+          Download Resume (PDF)
         </a>
       </p>
     </div>
-  
+
     <div class="main">
       <ul class="tabs">
         <li data-target="education" class="active">Education</li>
         <li data-target="skills">Skills</li>
         <li data-target="experience">Experience</li>
+        <li data-target="community">Community</li>
         <li data-target="projects">Projects</li>
         <li data-target="contact">Contact</li>
+        <li data-target="entertainment">Entertainment</li>
       </ul>
-  
-      <!-- EDUCATION -->
+
       <div id="education" class="tab-content active">
-        <div class="education-card">
-          <div class="education-header">
+        <div class="item">
+          <div class="item-header">
             <strong>Caldwell University</strong>
-            <span class="education-date">2024 – 2028</span>
+            <span class="date">Aug 2024 – Aug 2028</span>
           </div>
-          <p class="education-degree">Bachelor of Science in Computer Science & Business Analytics</p>
-          <div class="education-gpa">
-            <span class="gpa-label">GPA:</span>
-            <span class="gpa-value">3.57</span>
+          <p>Bachelor of Science in Computer Science & Business Analytics</p>
+          <p>GPA: <strong>3.7</strong></p>
+          <div class="coursework">
+            <strong>Relevant Coursework</strong>
+            <ul>
+              <li>Computer Programming I & II</li>
+              <li>Calculus I</li>
+              <li>UI/UX Human-centred Design</li>
+              <li>Database Management System</li>
+              <li>Data Structures</li>
+              <li>Fundamentals of MIS</li>
+              <li>Operating System</li>
+              <li>Windows Programming</li>
+              <li>Front-end Development</li>
+            </ul>
           </div>
         </div>
       </div>
-  
-      <!-- SKILLS -->
+
       <div id="skills" class="tab-content">
-        <div class="skill-category">
-          <strong>Programming & Web Technologies</strong>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Java (Basic)</span>
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">SQL (Basic)</span>
-          </div>
+        <div class="skill-group">
+          <strong>Programming Languages</strong>
+          <p>Python, C, JavaScript, SQL, HTML/CSS, C#</p>
         </div>
-  
-        <div class="skill-category">
-          <strong>Tools & Platforms</strong>
-          <div class="skill-tags">
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">Microsoft Excel</span>
-            <span class="skill-tag">Google Workspace</span>
-          </div>
+        <div class="skill-group">
+          <strong>Database Technologies</strong>
+          <p>MySQL, Apache</p>
         </div>
-  
-        <div class="skill-category">
-          <strong>Data & Business Analytics</strong>
-          <div class="skill-tags">
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Statistical Reasoning</span>
-            <span class="skill-tag">Business Analytics</span>
-            <span class="skill-tag">Problem Solving</span>
-          </div>
+        <div class="skill-group">
+          <strong>Developer Tools</strong>
+          <p>Git &amp; Github, Docker</p>
         </div>
-  
-        <div class="skill-category">
-          <strong>Professional Skills</strong>
-          <div class="skill-tags">
-            <span class="skill-tag">Communication</span>
-            <span class="skill-tag">Team Collaboration</span>
-            <span class="skill-tag">Leadership</span>
-            <span class="skill-tag">Event Coordination</span>
-            <span class="skill-tag">Time Management</span>
-          </div>
+        <div class="skill-group">
+          <strong>Data Analysis &amp; Visualization</strong>
+          <p>Excel, PowerBI</p>
         </div>
       </div>
-  
-      <!-- EXPERIENCE -->
+
       <div id="experience" class="tab-content">
-        <div class="experience-card">
-          <div class="experience-header">
-            <strong>Student Government Association (SGA) — Senator, Class of 2028</strong>
-            <span class="experience-date">2024 – Present</span>
+        <!-- Media: edit data-media-src="URL" and data-media-type="image|video|link" on each .item. Use "link" for Facebook/YouTube etc. -->
+        <div class="item" data-media-src="Orientation1.png,Orientation2.png,Orientation3.png,Orientation4.JPG,Orientation5.JPG" data-media-type="image">
+          <div class="item-header">
+            <strong>Orientation Leader</strong>
+            <span class="item-header-right"><span class="date">2025 – Present</span><button class="btn-media-icon" title="View media" aria-label="View media">🖼</button></span>
           </div>
-          <p class="experience-company">Caldwell University</p>
-          <ul class="experience-list">
-            <li>Represent student concerns in senate meetings and policy discussions</li>
-            <li>Proposed initiatives to improve student welfare and campus accessibility</li>
-            <li>Collaborated with faculty and administrators on student-focused solutions</li>
+          <p class="institution">Caldwell University</p>
+          <ul>
+            <li>Facilitate campus tours and orientation sessions for new students.</li>
+            <li>Provide guidance and support to incoming freshmen.</li>
           </ul>
         </div>
-  
-        <div class="experience-card">
-          <div class="experience-header">
-            <strong>Nepalese Student Association — Secretary & Event Coordinator</strong>
-            <span class="experience-date">2025 – Present</span>
+        <div class="item" data-media-src="" data-media-type="image">
+          <div class="item-header">
+            <strong>Peer Tutor at Academic Success Center</strong>
+            <span class="item-header-right"><span class="date">2025 – Present</span><button class="btn-media-icon" title="View media" aria-label="View media">🖼</button></span>
           </div>
-          <p class="experience-company">Caldwell University</p>
-          <ul class="experience-list">
-            <li>Planned and executed cultural and social events promoting diversity and inclusion</li>
-            <li>Managed budgeting, scheduling, and coordination with university departments</li>
-            <li>Strengthened engagement among international and domestic students</li>
+          <p class="institution">Caldwell University</p>
+          <ul>
+            <li>Assist students in understanding course material and improving academic performance.</li>
+            <li>Develop personalized study plans and resources for tutees.</li>
+          </ul>
+        </div>
+        <div class="item" data-media-src="SGA1.png,SGA2.png" data-media-type="image">
+          <div class="item-header">
+            <strong>Student Government Association — Senator</strong>
+            <span class="item-header-right"><span class="date">2024 – Present</span><button class="btn-media-icon" title="View media" aria-label="View media">🖼</button></span>
+          </div>
+          <p class="institution">Caldwell University</p>
+          <ul>
+            <li>Represent student concerns and propose campus initiatives.</li>
+            <li>Collaborate with faculty on student-focused solutions.</li>
           </ul>
         </div>
       </div>
-  
-      <!-- PROJECTS -->
+
+      <div id="community" class="tab-content">
+        <div class="item" data-media-src="Crits1.png,Crits2.png,Crits3.png" data-media-type="image">
+          <div class="item-header">
+            <strong>Secretary — The Crits</strong>
+            <span class="item-header-right"><span class="date">2023 – Present</span><button class="btn-media-icon" title="View media" aria-label="View media">🖼</button></span>
+          </div>
+          <p>Co-founded and led The Crits, a national initiative empowering youth through digital literacy and career counseling.</p>
+          <ul>
+            <li>Delivered interactive workshops to over 1,000 students across urban and rural Nepal.</li>
+            <li>Enhanced their skills and awareness in digital literacy and career development.</li>
+          </ul>
+        </div>
+        <div class="item" data-media-src="AskMatrab1.png,AskMatrab2.png" data-media-type="image">
+          <div class="item-header">
+            <strong>Creator — Askmattrab</strong>
+            <span class="item-header-right"><span class="date">2023 – Present</span><button class="btn-media-icon" title="View media" aria-label="View media">🖼</button></span>
+          </div>
+          <ul>
+            <li>Uploaded math problems and solutions to a platform for learners.</li>
+            <li>Created instructional materials that improved learners' understanding of advanced mathematical problem-solving techniques.</li>
+          </ul>
+        </div>
+      </div>
+
       <div id="projects" class="tab-content">
-        <div class="project-card">
-          <div class="project-header">
-            <strong>Python Hourly Work Tracker</strong>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">CSV</span>
-              <span class="tech-badge">Tkinter/Kivy</span>
-            </div>
-          </div>
-          <ul class="project-list">
-            <li>Designed and developed an application to track work hours and calculate weekly earnings</li>
-            <li>Implemented persistent data storage and shift history management</li>
-          </ul>
-          <a href="https://github.com/Gaurab-Giri" target="_blank" class="project-link">
-            <span>View on GitHub</span>
-            <span class="link-arrow">→</span>
-          </a>
+        <div class="item">
+          <div class="item-header"><strong>Chef On Call — UI/UX Design</strong></div>
+          <p>Mobile application design focused on culinary services developed in Figma.</p>
+          <a href="https://www.figma.com/design/tHwj5rJ7BLwUkjdHTTpYL0/UI-UX-Project.-Chef-On-Call?node-id=0-1&t=WZp8JtEM9tVFoLpf-1" target="_blank" class="link-figma">View Figma Design</a>
         </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <strong>Cyber Quiz Game</strong>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">Kivy</span>
-            </div>
-          </div>
-          <ul class="project-list">
-            <li>Built an interactive GUI-based quiz application focused on cybersecurity fundamentals</li>
-            <li>Implemented scoring logic, navigation controls, and user feedback popups</li>
-          </ul>
-          <a href="https://github.com/Gaurab-Giri" target="_blank" class="project-link">
-            <span>View on GitHub</span>
-            <span class="link-arrow">→</span>
-          </a>
+        <div class="item">
+          <div class="item-header"><strong>Python Hourly Work Tracker</strong></div>
+          <p>GUI-based app for tracking work shifts and weekly earnings.</p>
+          <a href="https://github.com/Gaurab-Giri" target="_blank" class="link-github">GitHub Repository</a>
         </div>
       </div>
-  
-      <!-- CONTACT -->
+
       <div id="contact" class="tab-content">
-        <form>
-          <label>Name</label>
-          <input type="text" placeholder="Your Name">
-  
-          <label>Email</label>
-          <input type="email" placeholder="Your Email">
-  
-          <label>Message</label>
-          <textarea placeholder="Write your message..." style="height:150px"></textarea>
-  
-          <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-wrapper">
+          <div class="contact-info-sidebar">
+            <h3>Get In Touch</h3>
+            <p class="contact-intro">I'd love to hear from you. Reach out via email, phone, or connect on socials.</p>
+            <div class="info-cards">
+              <a href="mailto:ggiri@caldwell.edu" class="info-card">
+                <span class="info-icon">✉</span>
+                <strong>Email</strong>
+                <span>ggiri@caldwell.edu</span>
+              </a>
+              <a href="tel:+18624594545" class="info-card">
+                <span class="info-icon">📞</span>
+                <strong>Phone</strong>
+                <span>862-459-4545</span>
+              </a>
+              <div class="info-card info-card-static">
+                <span class="info-icon">📍</span>
+                <strong>Location</strong>
+                <span>Caldwell, NJ</span>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/gaurab-giri-6890591b7/" target="_blank" rel="noopener" class="social-btn linkedin">LinkedIn</a>
+              <a href="https://github.com/Gaurab-Giri" target="_blank" rel="noopener" class="social-btn github">GitHub</a>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form id="contactForm">
+              <div class="form-row">
+                <div><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+                <div><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
+              </div>
+              <label>Subject</label>
+              <select name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="Work Opportunity">Work Opportunity</option>
+                <option value="Project Collaboration">Project Collaboration</option>
+                <option value="General Inquiry">General Inquiry</option>
+        <option value="Professional Suggestion / Feedback">Professional Suggestion / Feedback</option>
+              </select>
+              <label>Message</label>
+              <textarea name="message" placeholder="Write your message here..." rows="4" required></textarea>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="entertainment" class="tab-content">
+        <section class="entertainment-section">
+          <h2 class="section-title">Games</h2>
+          <div class="entertainment-grid games-grid">
+            <div class="card game-card">
+              <h3>Retro Snake</h3>
+              <p class="card-desc">Use arrow keys. Eat food, avoid walls and yourself.</p>
+              <canvas id="snakeGame" width="280" height="280"></canvas>
+              <div class="game-meta">
+                <button id="startGame" class="btn-game">Start</button>
+                <span class="game-stat">Score: <strong id="score">0</strong></span>
+              </div>
+            </div>
+
+            <div class="card game-card">
+              <h3>Higher or Lower</h3>
+              <p class="card-desc">Guess if the next number (1–100) is higher or lower.</p>
+              <div class="hol-display"><span id="currentNum">50</span></div>
+              <div class="game-meta game-meta-btns">
+                <button onclick="guess('higher')" class="btn-game">Higher</button>
+                <button onclick="guess('lower')" class="btn-game">Lower</button>
+                <span class="game-stat">Streak: <strong id="guessScore">0</strong></span>
+              </div>
+            </div>
+
+            <div class="card game-card">
+              <h3>Memory Match</h3>
+              <p class="card-desc">Flip cards to find matching pairs.</p>
+              <div id="memoryBoard" class="memory-board"></div>
+              <div class="game-meta">
+                <button id="memoryStart" class="btn-game">New Game</button>
+                <span class="game-stat">Moves: <strong id="memoryMoves">0</strong></span>
+              </div>
+            </div>
+
+            <div class="card game-card">
+              <h3>Typing Speed Test</h3>
+              <p class="card-desc">Type the text below as fast as you can.</p>
+              <div id="typingQuote" class="typing-quote"></div>
+              <textarea id="typingInput" class="typing-input" placeholder="Start typing here..." rows="2" disabled></textarea>
+              <div class="game-meta">
+                <button id="typingStart" class="btn-game">Start Test</button>
+                <span class="game-stat">WPM: <strong id="typingWpm">—</strong></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="entertainment-section">
+          <h2 class="section-title">Media & Location</h2>
+          <div class="entertainment-grid media-grid">
+            <div class="card media-card">
+              <h3>Location & Weather</h3>
+              <div id="weather-display" class="weather-box">
+                <p id="temp-data">Fetching weather for Caldwell, NJ...</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.3702111530396!2d-74.2789!3d40.8384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3000000000001%3A0x0!2zNDDCsDUwJzE4LjIiTiA3NMKwMTYnNDQuMCJX!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="200" style="border:0; border-radius: 8px; margin-top:10px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="card media-card">
+              <h3>Media Showcase</h3>
+              <video id="pageVideo" controls width="100%"><source src="suprima.mp4" type="video/mp4"></video>
+              <audio id="pageAudio" style="width: 100%; margin-top: 10px;"><source src="bgmusic.mp3" type="audio/mpeg"></audio>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
+
+  <div id="mediaModal" class="media-modal" role="dialog" aria-modal="true" aria-label="Media viewer">
+    <div class="media-modal-backdrop"></div>
+    <div class="media-modal-content">
+      <button class="media-modal-close" aria-label="Close">&times;</button>
+      <div class="media-modal-body">
+        <img id="mediaModalImg" class="media-modal-img" alt="" style="display:none;">
+        <div id="mediaModalGallery" class="media-modal-gallery" style="display:none;"></div>
+        <video id="mediaModalVideo" class="media-modal-video" controls style="display:none;"></video>
+        <p id="mediaModalPlaceholder" class="media-modal-placeholder" style="display:none;">No media has been added yet.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="chat-toggle" id="chatToggle">💬</button>
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <span>Resume Bot</span>
+      <div class="chat-header-actions">
+        <button class="chat-btn-mini" id="chatWhoAreYou" title="Set your visitor type">Who are you?</button>
+        <button class="close-chat" id="closeChat">&times;</button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages"><div class="message bot">Hi! Ask me about Gaurab's resume, projects, or skills. Say "dark mode", "play music", or "color picker" to control the site.</div></div>
+    <div class="chat-input-area"><input type="text" id="chatInput" placeholder="Type here..."><button id="sendMessage">➤</button></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
